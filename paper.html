@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+
+        
+        .bk-img{
+          width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0,0.5)) ,url(https://cdn.elearningindustry.com/wp-content/uploads/2020/06/ways-online-educational-resources-are-useful.jpg);
+        }
+
+        nav{
+            
+            border-radius:30px ;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
+            background: linear-gradient(to left ,rgba(0, 0, 245, 0.5),rgba(22, 75, 209, 0.5) ,rgba(38, 1, 203, 0.5),rgb(0, 0, 0));
+        }
+
+        nav:hover{
+            background: linear-gradient(to left ,rgba(0, 0, 0, 0.5),rgb(2, 16, 169));
+        }
+        
+        .logo img{
+            margin-left: -10%;
+            width: 80px;
+            border-radius:60px ;
+            /* margin-bottom: 10px; */
+        }
+        
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        nav ul li a{
+            position: relative;
+            color: rgb(36, 122, 228);
+            text-decoration: none;
+            font-size: 23px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        nav ul li a:hover{
+            color: azure;
+            font-size: 25px;
+            font-family:' Gothic Medium';
+            transition: 1.5s;
+        } 
+        
+
+        .bt button{
+            font-family:sans;
+            color: aliceblue;
+            height: 40px;
+            width: 120px;
+            border-radius: 12px;
+            font-size: 25px;
+            background-color: #0003;
+            margin-bottom: 10px;
+            border-color: rgb(0, 100, 201);
+        }
+        .bt button:hover{
+            background-color: rgb(19, 242, 249);
+            cursor: pointer;
+            transition: 1.5s;
+            color: rgb(70, 70, 212);
+            font-weight: bold;
+        }
+
+        .text-area{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+        }
+
+        .text-area h1{
+            font-size: 40px;
+        }
+
+        .text-area p{
+           margin: 10px 0 40px;
+           font-size: 17px;
+           margin-top: 19px;
+        }
+        .bk-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+
+         *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        
+        }
+        section{
+          background-color: #3571fc;
+          margin-top: -10%;
+        }
+
+        .h1{
+          text-align: center;
+          padding: 10% ;
+          font-size: 40px;
+        }
+        .rightc{
+        display: flex;
+        width: 100%;
+        margin-top: -10%;
+    }
+
+
+    .cardc{
+      width: 400px;
+      height: 450px ;
+      padding: 2rem 1rem;
+      position: relative;
+      display: flex;
+      border-radius: 13.5px;
+      border: 3px solid rgb(255, 255, 255);
+      align-items: flex-end;
+      box-shadow: 0px 7px 10px rgba(0,0,0,0.5) ;
+      transition:0.5s ease-in-out ; 
+      margin-top: 10%;
+      border-color: black;
+    }
+    .cardc:hover{
+      transform: translateY(20px);
+      border-radius: 13px;
+    }
+    .cardc:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #0009;
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;
+      border-radius: 10px;
+    }
+    .cardc:hover:before{
+      opacity:1;
+    }
+    .cardc img{
+      width: 100%;
+      height: 100%;
+      object-fit:cover ;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+    }
+    .cardc .tri{
+      position: relative;
+      z-index: 3;
+      color: #3571fc;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s all;
+    }
+    .cardc:hover .tri{
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    .cardc.tri h1{
+      margin:0px;
+      text-align: center;
+    }
+    .cardc button{
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #014980;
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      border: #ffffff;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+      margin-bottom: 30px;
+      
+    }
+    .cardc button:hover{
+      box-shadow:  0px 7px 10px rgba(0,0,0,0.5) ;
+    }
+
+
+    .cardc0{
+      width: 400px;
+      height: 450px ;
+      padding: 2rem 1rem;
+      position: relative;
+      display: flex;
+      border-radius: 13.5px;
+      border: 3px solid rgb(255, 255, 255);
+      align-items: flex-end;
+      box-shadow: 0px 7px 10px rgba(0,0,0,0.5) ;
+      transition:0.5s ease-in-out ;
+      margin-left: 2%;
+      margin-top: 10%;
+      border-color: black;
+    }
+    .cardc0:hover{
+      transform: translateY(20px);
+      border-radius: 13px;
+    }
+    .cardc0:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #0009;
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;
+      border-radius: 10px;
+    }
+    .cardc0:hover:before{
+      opacity:1;
+    }
+    .cardc0 img{
+      width: 100%;
+      height: 100%;
+      object-fit:cover ;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+    }
+    .cardc0 .tri{
+      position: relative;
+      z-index: 3;
+      color: #3571fc;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s all;
+    }
+    .cardc0:hover .tri{
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    .cardc0.tri h1{
+      margin:0px;
+
+    }
+    .cardc0 button{
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #014980;
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      border: #ffffff;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+      margin-bottom: 30px;
+      
+    }
+    .cardc0 button:hover{
+      box-shadow:  0px 7px 10px rgba(0,0,0,0.5) ;
+    }
+    span{
+      font-size: 14px;
+      color:rgb(42, 188, 255);
+    }
+        
+
+    </style>
+</head>
+<body >
+  
+    <nav> 
+    <a href="#" class="logo" height="100vh">
+        <img src="2.png" >
+    </a>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="http://127.0.0.1:5500/w.html">Courses</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="bt">
+      <button>Sign In</button>
+      </div>
+    </nav>
+  
+    <div class="bk-img"></div>
+
+    <div class="text-area">
+        <h1>BEST WAY TO ADVANCE YOUR THIKING: </h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo laudantium asperiores error libero sunt veritatis modi,<br>  exercitationem possimus dolore animi. Dolorem esse repudiandae deserunt est repellendus soluta consequatur?</P>
+        <a href="" class="bk-btn">VISIT AND GAIN KNOWLEDGE</a>
+    </div>
+  
+    
+    <section>
+      <h1 class="h1"> OUR CAMPUSES</h1>
+        <div class="rightc">
+
+            <div class="cardc">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Campus_view_-_Drexel_University_-_IMG_7303.JPG/800px-Campus_view_-_Drexel_University_-_IMG_7303.JPG">
+              <div class="tri">
+                <h1>OUR CAMPUS </h1>
+                <button>VIST NOW  <span>CLICK HERE</span></button>
+                
+              </div>
+            </div>
+    
+            <div class="cardc0">
+              <img src="https://images.adsttc.com/media/images/5df0/c244/3312/fdec/ff00/020c/newsletter/%E5%9B%BE10_%E6%B2%BF%E4%B8%9C%E4%BE%A7%E8%BF%90%E5%8A%A8%E5%9C%BA%E7%A9%BF%E6%8F%92%E7%9A%84%E4%B8%89%E4%B8%AA%E6%8A%A5%E5%91%8A%E5%8E%85.jpg?1576059450">
+              <div class="tri">
+                <h1>OUR CAMPUS</h1>
+                <button>VIST NOW  <span>CLICK HERE</span></button>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="about us"></div> 
+          </section>
+
+        
+      
+      
+</body>
+</html>
+    
